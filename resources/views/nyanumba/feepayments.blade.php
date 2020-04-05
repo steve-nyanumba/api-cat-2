@@ -9,7 +9,7 @@
                     <h3 class="text-center">Add a new Student</h3>
                 </div>
                 <div class="card-body">
-                    <table class="table table-responsive">
+                    <table class="table-responsive ">
                         <thead>
                             <tr>
                                 <th>Student Number</th>
