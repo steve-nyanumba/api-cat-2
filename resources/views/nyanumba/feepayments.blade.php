@@ -8,8 +8,8 @@
                 <div class="card-header">
                     <h3 class="text-center">Add a new Student</h3>
                 </div>
-                <div class="card-body">
-                    <table class="table-responsive ">
+                <div class="card-body m-auto">
+                    <table class="table table-responsive table-center">
                         <thead>
                             <tr>
                                 <th>Student Number</th>
