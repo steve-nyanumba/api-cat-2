@@ -1,79 +1,39 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
-
+<p align="center"><h1>Steve Nyanumba<small> (111812)</small></h1></p>
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+<a href="https://api-cat-ii.herokuapp.com"><img src="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_400/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c28d1061-95a7-44bf-b469-f6172ac28dfe/svg-arduino-pushbutton-image3.svg" alt="Click to my App" width="80"></a>
+click the button to go to the app
 </p>
 
-## About Laravel
+## About My App
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+As a class we were required to make a simple application using Laravel for a student's fee payment manager.
+Think of the relationships between a ‘student’ and ‘fees payment’ in a school environment.  There is a form used to register a student (with details, student number, full name, date of birth and address) and another form used to record a fee payment (with details student that is paying fees, date of payment and amount) instance. Because it is not possible for all the students to pay their fees once, they are allowed to pay in ‘bits’. This means one student pays fees once or many times. 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Requirements
+1.	Set your database variables in your .env file
+2.	In your Laravel folder structure, create a folder (the name of this folder should be your student name) in views folder. This folder will hold all your views in this work. 
+3.	Create 2 views to hold forms for registering a new student and for paying fees. Name the views as student.blade.php and fees.blade.php respectively. 
+4.	Create a home view (give name of your choice) such that when one visits 127.0.0.1:8000, they see a view with 2 links as follows:
+-	Student – When clicked, shows a form used to register a new student
+-	Fees – when clicked, shows a form used to record new fees payment by a student. 
+5.	Create two models (from Laravel command line) Student and Fees together with their migration files. Complete the migration files to show the all the data they will store. Use appropriate data types. 
+-	Record the Laravel commands you used to create your models
+-	Show how the migration files looks like after you update
+-	Which commands do you use to finally create your table? 
+6.	Write two methods, one in each model to bring out this relationship, ‘Student owns many fees payments and that fees payments belongs to Students’. Show the methods. 
+7.	Create a controller for each model. Which command did you use? 
+8.	When data in the form are submitted, it is saved as follows 
+-	Students form saves data into a table called ‘students’
+-	Fees payment forms saves data into fees table. 
+-	All form data must be validated in Laravel 
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
-- [云软科技](http://www.yunruan.ltd/)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Credits
+<p>
+<h3>University:</h3><h5> Strathmore university</h5>
+</p>
+<p>
+<h3>Course:</h3><h5> BBIT</h5>
+</p>
+<p>
+<h3>Unit:</h3><h5> Application Programing for the internet (Lec. D. Mosoti)</h5>
+</p>
