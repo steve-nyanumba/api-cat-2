@@ -9,27 +9,29 @@
                     <h3 class="text-center">Add a new Student</h3>
                 </div>
                 <div class="card-body m-auto">
-                    <table class="table table-responsive table-center">
-                        <thead>
-                            <tr>
-                                <th>Student Number</th>
-                                <th> Student Name</th>
-                                <th>Date of Payment</th>
-                                <th>Amount Paid</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($fees as $fee)
-                            <tr>
-                                <td> {{ $fee->student_number }} </td>
-                                <td> {{ $fee->students->full_name }} </td>
-                                <td> {{ $fee->date_of_payment }} </td>
-                                <td> {{ $fee->amount }} </td>
-
-                                </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <table class="table table-responsive table-center">
+                                <thead>
+                                    <tr>
+                                        <th>Student Number</th>
+                                        <th> Student Name</th>
+                                        <th>Date of Payment</th>
+                                        <th>Amount Paid</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach ($fees as $fee)
+                                    <tr>
+                                        <td> {{ $fee->student_number }} </td>
+                                        <td> {{ $fee->students->full_name }} </td>
+                                        <td> {{ $fee->date_of_payment }} </td>
+                                        <td> {{ $fee->amount }} </td>
+                                    </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
