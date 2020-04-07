@@ -3,14 +3,14 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-11 col-md-9">
+        <div class="col-12">
             <div class="card">
                 <div class="card-header">
                     <h3 class="text-center">Add a new Student</h3>
                 </div>
                 <div class="card-body m-auto">
                     <div class="row justify-content-center">
-                        <div class="col-10">
+                        <div class="col-9">
                             <table class="table table-responsive table-center">
                                 <thead>
                                     <tr>
